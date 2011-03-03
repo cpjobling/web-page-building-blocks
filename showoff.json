@@ -1,14 +1,15 @@
 {
-  "name": "Web Page Builing Blocks and Web Site Design",
+  "name": "Web Page Building Blocks and Web Site Design",
   "description": "Lecture 14: EG-146 Communications for the Internet",
   "sections": [
+    {"section":"titles"},
     {"section":"books"},
-    {"section":"context"}
-    {"section":"mark-up"},
-    {"section":"textual content"},
-    {"section","links, etc"},
-    {"section","HTML and XHTML"},
-    {"section","Style sheets"},
-    {"section","Designing your site"}
+    {"section":"context"},
+    {"section":"mark_up"},
+    {"section":"textual_content"},
+    {"section":"links_etc"},
+    {"section":"x_html"},
+    {"section":"style_sheets"},
+    {"section":"site_design"}
   ]
 }
