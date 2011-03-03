@@ -6,8 +6,8 @@ Implemented using Showoff http://github.com/schacon/showoff
 
 Instructions
   $ gem install showoff
-  $ git clone git://github.com/scottbale/JavaScript-Function-Idioms.git
-  $ cd JavaScript-Function-Idioms
+  $ git clone git://github.com/cpjobling/web-page-building-blocks.git
+  $ cd web-page-building-blocks
   $ showoff serve
 
 Then you should be able to go to http://localhost:9090 to view the
