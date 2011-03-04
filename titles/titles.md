@@ -1,4 +1,4 @@
-!SLIDE bullets
+!SLIDE bullets smaller
 
 ## EG-146: Communications for the Internet ##
 ### Lecture 14 ###
@@ -10,7 +10,7 @@
 ## C.P.Jobling@Swansea.ac.uk ##
 
 
-!SLIDE bullets transition=scrollUp
+!SLIDE bullets transition=scrollUp smaller
 
 # Lecture 14 #
 
