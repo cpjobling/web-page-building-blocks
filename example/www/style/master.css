@@ -4,9 +4,7 @@ Author: 	dan@simplebits.com
 */
 
 body {
-	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
 	color: #444;
-	font-size: 62.5%;
 	background: #fff;
 	}
 	
@@ -69,7 +67,7 @@ a:hover {
 /* misc. 
 --------------------------------------------- */
 
-hr, .hide {
+.hide {
 	display: none;
 	}
 a img {

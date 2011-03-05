@@ -5,6 +5,8 @@ Author: 	dan@simplebits.com
 
 /* import stylesheets and hide from ie/mac \*/
 @import url("reset.css");
+@import url("base.css");
+@import url("fonts.css");
 @import url("master.css");
 @import url("ie.css");
 /* end import/hide */
