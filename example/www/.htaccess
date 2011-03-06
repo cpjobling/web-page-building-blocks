@@ -1,7 +1,0 @@
-
-RewriteEngine on
-
-RewriteCond %{HTTP_HOST} ^eg-146.cpjobling.me$ [OR]
-RewriteCond %{HTTP_HOST} ^www.eg-146.cpjobling.me$
-RewriteRule ^/?$ "http\:\/\/eg\-146\.cpjobling\.org\.uk" [R=301,L]
-

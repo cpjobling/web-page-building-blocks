@@ -10,7 +10,7 @@
 ## C.P.Jobling@Swansea.ac.uk ##
 
 
-!SLIDE bullets transition=scrollUp smaller
+!SLIDE bullets smaller
 
 # Lecture 14 #
 
