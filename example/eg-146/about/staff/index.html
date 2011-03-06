@@ -32,9 +32,13 @@
         <!-- The wide column is wrapped in div#yui-main -->
         <div id="yui-main">
           <div class="yui-b group">
+            <p><img src="../../images/cpjobling.jpg" alt="The author of this web site." /></p>
             <p>
               In pellentesque, elit nec porttitor rutrum, nulla nulla congue velit, ut ullamcorper ligula diam ut turpis. Praesent neque est, blandit ac posuere et, aliquam vitae neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce non lorem ut elit condimentum tincidunt. Sed bibendum velit sit amet enim sollicitudin tempus. Vestibulum semper massa in nisl rhoncus lobortis nec nec metus. Fusce tincidunt tortor sit amet justo ornare quis posuere magna lacinia. In in commodo magna. Praesent iaculis, leo vel pretium lacinia, tortor odio feugiat libero, nec posuere felis quam vel dolor. Phasellus sed dui eu sem ultricies congue. Phasellus at felis eu lacus aliquam semper ut non massa. Duis lectus nulla, fringilla vel tristique vel, dignissim pretium risus. Curabitur eu metus arcu. In vulputate faucibus rutrum. Duis rhoncus ligula eget est placerat at tristique libero euismod. Aenean vestibulum dui lectus. In sit amet nisl in libero imperdiet pellentesque. In hac habitasse platea dictumst. Praesent fringilla tincidunt purus, rutrum pulvinar sem porttitor a. Fusce et tellus eget eros sagittis mollis.
             </p>
+            <p>To link to this page from anywhere on this website you could use HTML markup like this:</p>
+              <pre>Go to the &lt;a href=&quot;/about/staff/index.html&quot;&gt;About Us: Staff&lt;/a&gt; page!.
+              </pre>
             <h3>
               Absolute Paths
             </h3>
@@ -45,11 +49,22 @@
                 <li>Its URL is <a href="http://eg-146.cpjobling.org.uk/about/staff/index.html">http://eg-146.cpjobling.org.uk/about/staff/index.html</a></li>
                 <li>or more simply <a href="http://eg-146.cpjobling.org.uk/about/staff/">http://eg-146.cpjobling.org.uk/about/staff/</a>.</li>
                 <li>From the previous page we used the absolute path <a href="/about/staff/">/about/staff/</a> to get here.</li>
+                </ul>
             </p>
             <p>
-              <a class="arrow" href="/">Next [/]</a> →
+              <a class="arrow" href="/youarehere.html#relative">Next [/youarehere.html#relative]</a> →
             </p>
-
+            <h3 id="relative">Relative paths</h3>
+            <ul>
+              <li>To link to this document from <em>youarehere.html</em> you could use this HTML markup:
+            <pre>Go to the &lt;a href=&quot;about/staff/index.html&quot;&gt;About Us: Staff&lt;/a&gt; page!.</pre></li>
+            </ul>
+            <h3 id="parents">Linking upwards</h3>
+            <p>The path <code>../..</code> indicates two directories above the current directory. The directory containing this file is <code>../public/eg-146/about/staff</code>, so <code>../..<code> is <code>../public/eg-146</code>. This is the <em>document root</em> <code>/</code> of this web site.
+              <ul>
+                <li>To link to <em>youarehere.html</em> from this file you could use this HTML markup:
+                 <pre>Back to &lt;a href=&quot;../../youarehere.html&quot;&gt;You Are Here&lt;/a&gt;!.</pre>Like this: Back to <a href="../../youarehere.html">You Are Here</a>!.</li>
+              </ul>
           </div>
         </div><!-- the unwrapped div.yui-b takes a fixed width and alignment based on the class of the top-level containing node -->
         <div class="yui-b group">
@@ -59,6 +74,9 @@
             </li>
             <li>
               <a href="/about/">About us</a>
+            </li>
+            <li>
+              <a href="/pagelinks.html">Page links</a>
             </li>
             <li>
               <a href="/sitemap.html">Sitemap</a>

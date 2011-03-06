@@ -35,8 +35,10 @@
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mattis velit sed lorem semper eu luctus metus molestie. Sed consectetur, libero at semper fermentum, nisi diam sodales felis, vel lobortis lacus dui at sapien. Phasellus ullamcorper porttitor massa eu elementum. Sed ut ornare magna. Maecenas magna mauris, porttitor eu varius eget, iaculis et sapien. Aliquam nec dictum ligula. Cras quis risus ipsum. Ut imperdiet, lacus eget gravida ultrices, turpis felis molestie eros, in pellentesque eros justo vitae mi. Maecenas vitae arcu augue, quis placerat turpis. Etiam sit amet urna nibh, adipiscing fermentum arcu. Donec id posuere sapien. Proin at purus in risus fermentum malesuada. Nullam ac velit eros, elementum pharetra sapien. Integer iaculis augue ac diam tristique mollis. Pellentesque nec odio neque.
             </p>
-
-            <h3>
+            <p>To link to this web page from anywhere on the Internet you could use HTML markup like this:</p>
+              <pre>Go to &lt;a href=&quot;http://eg-146.cpjobling.org.uk/youarehere.html&quot;&gt;You Are Here!&lt;/a&gt;.
+                </pre>
+            <h3 id="absolute">
               Absolute paths
             </h3>
             <p>Can always use the <em>absolute path</em> to access a document.
@@ -50,9 +52,12 @@
             <p>
               <a class="arrow" href="/about/index.html">Next [/about/index.html]</a> →
             </p>
-            <h3>
+            <h3 id="relative">
               Relative Paths
             </h3>
+            <p>Relative links do not start with <code>&quot;/&quot;</code>. The browser starts looking from the current directory, not the <em>document root</em>. To get to this page from the site home page you could use HTML markup like this:</p>
+            <pre>Go to &lt;a href=&quot;youarehere.html&quot;&gt;You Are Here!&lt;/a&gt;.
+            </pre>
             <p>You can also reference documents <em>relative</em> to the current location.</p>
             <ul>
               <li>From here you can link to a <em>child</em> page simply by using the folder name followed by the file name: <a href="about/index.html">about/index.html</a>.
@@ -60,8 +65,9 @@
 
               <li>To link to a <em>grand-child</em> page simply by using the folder names followed by the file name:<br /> <a href="about/staff/index.html">about/staff/index.html.</a>
               </li>
-            </ul><!-- /main -->
-
+            </ul>
+            <h3 id="offsite">Linking offsite</h3>
+            <p>You need the <em>protocol</em> and <em>host</em> to link to a resource offsite. For example this HTML markup would be used to link to another site:<pre>Link to &lt;a href=&quot;http://www.cpjobling.me/dokuwiki/eg-146:lecture14&quot;&gt;lecture notes&lt;/a&gt;.</pre>Like this: Link to <a href="http://www.cpjobling.me/dokuwiki/eg-146:lecture14">lecture notes</a>.
           </div>
         </div><!-- the unwrapped div.yui-b takes a fixed width and alignment based on the class of the top-level containing node -->
         <div class="yui-b group">

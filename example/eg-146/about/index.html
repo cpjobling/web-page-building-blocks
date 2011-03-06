@@ -35,7 +35,15 @@
             <p>
               Sed fermentum fermentum metus sit amet rhoncus. Mauris eget tristique dolor. Sed aliquet, elit id accumsan vehicula, sem lorem aliquam nunc, a lacinia mauris risus eu turpis. Praesent varius dui ut massa fermentum a bibendum erat iaculis. Vivamus lectus nunc, sollicitudin a condimentum non, iaculis vitae leo. Nulla pulvinar, neque id mollis vulputate, lorem leo ultrices tellus, nec condimentum felis felis vitae leo. Mauris sit amet lacus nibh. Praesent nisl augue, ornare feugiat fermentum quis, pretium eu odio. Donec iaculis ligula vitae turpis sollicitudin dictum. Suspendisse potenti. Quisque ut facilisis odio. Vivamus dictum tellus in sapien tempor at vehicula leo egestas. Sed id elit id metus fringilla fermentum sed in eros. Duis convallis porttitor tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam nibh odio, posuere quis placerat vel, tempus in est. Donec enim metus, venenatis vitae sollicitudin id, hendrerit quis sapien. Nunc id vehicula magna. Vestibulum tempus, urna vitae pretium consectetur, est nisi venenatis turpis, nec luctus lorem lacus at eros. Proin eu est non nulla cursus vulputate.
             </p>
-            <h3>
+            <ul>
+              <li>Links which start with <code>&quot;/&quot;</code> are called <em>absolute paths</em>.</li>
+              <li><code>/</code> is called a &ldquo;<strong>virtual root</strong>&rdquo; because it will not usually be routed at <code>/</code> in the file system.</li>
+              <li>Unix &ldquo;forward slash&rdquo; notation is used for directories on the web, even if another notation is used for files on the server.</li>
+            </ul>
+            <p>To link to this page from anywhere on this website you could use HTML markup like this:</p>
+              <pre>Go to the &lt;a href=&quot;/about/index.html&quot;&gt;About Us&lt;/a&gt; page!.
+              </pre>
+            <h3 id="absolute">
               Absolute paths
             </h3>
             <p>
@@ -43,14 +51,33 @@
                 <li>This is the <em>About Us</em> page. Its <em>URL path</em> is: <code>public_html/eg-146/about/index.html</code>.</li>
                 <li>Its URL is <a href="http://eg-146.cpjobling.org.uk/about/index.html">http://eg-146.cpjobling.org.uk/about/index.html</a></li>
                 <li>or more simply <a href="http://eg-146.cpjobling.org.uk/about/">http://eg-146.cpjobling.org.uk/about/</a>.</li>
-                <li>From the previous page we used the absolute path <a href="/about/index.html">/about/index.html</a> to get here.
+                <li>From the previous page we used the absolute path <a href="/about/index.html">/about/index.html</a> to get here.</li>
               </ul>
             </p>
 
             <p>
               <a class="arrow" href="/about/staff/">Next [/about/staff/]</a> →
             </p>
-
+            <h3 id="relative">Relative paths</h3>
+            <ul>
+              <li>To link to this document from <em>youarehere.html</em> you could use this HTML markup:
+                <pre>Go to the &lt;a href=&quot;about/index.html&quot;&gt;About Us&lt;/a&gt; page!.</pre>
+            </ul>
+            <h3 id="parents">Linking upwards</h3>
+            <p>To link to a file in a higher level directory you use the Unix notation for the <em>parent directory</em>. For example, from this file, <code>../</code> indicates the directory above <code>../public/eg-146/about</code>, that is <code>../public/eg-146</code>. This is the <em>document root</em> <code>/</code> of this web site.
+              <ul>
+                <li>To link to <em>youarehere.html</em> from this file you could use this HTML markup:
+                 <pre>Back to &lt;a href=&quot;about/index.html&quot;&gt;You Are Here&lt;/a&gt;!.</pre>Like this: Back to <a href="../youarehere.html">You Are Here</a>!.</li>
+              </ul>
+              <h3 id="images">Images</h3>
+              <p>The same rules applies to images. E.g. from this file the following are equivalent:
+                <pre>&lt;img src=&quot;../images/cpjobling.jpg&quot; alt=&quot;The author of this web site.&quot; /&gt;
+&lt;img src=&quot;/images/cpjobling.jpg&quot; alt=&quot;The author of this web site.&quot; /&gt;
+&lt;img src=&quot;http://eg-146.cpjobling.org.uk/images/cpjobling.jpg&quot; 
+     alt=&quot;The author of this web site.&quot; /&gt;</pre> 
+                  They all produce:<br />
+                  <img src="../images/cpjobling.jpg" alt="The author of this web site." />
+              </p>
           </div>
         </div><!-- the unwrapped div.yui-b takes a fixed width and alignment based on the class of the top-level containing node -->
         <div class="yui-b group">
@@ -60,6 +87,9 @@
             </li>
             <li>
               <a href="/about/">About us</a>
+            </li>
+            <li>
+              <a href="/pagelinks.html">Page links</a>
             </li>
             <li>
               <a href="/sitemap.html">Sitemap</a>

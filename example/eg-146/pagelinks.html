@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
   <head>
     <title>
-      EG-146 example website: emplate file
+      Linking Within a Page
     </title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <!--[if gte IE7]><!-->
@@ -17,12 +17,12 @@
       <div id="header">
         <div id="logo">
           <h1>
-            <img src="images/logo.jpg" alt="Digital technium building" width="89" height="115" /> EG-146 Demo Site
+            <img src="images/logo.jpg" alt="Digital technium building" width="89" height="115" /> Linking Within a Page
           </h1>
         </div><!-- div#logo -->
         <div id="breadcrumb">
           <p>
-            <a href="/">Home</a> &gt;
+            <a href="/">Home</a> &gt; <a href="/pagelinks.html">Page Links</a> &gt;
           </p>
         </div><!-- div#breadcrumb -->
       </div><!-- div#header -->
@@ -33,8 +33,21 @@
         <div id="yui-main">
           <div class="yui-b group">
             <p>
-              Main B - Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+              You can also link to any element within a page that has an <code>id</code> attribute set.
             </p>
+            <p>
+              For example, say a web page contains
+              <pre>&lt;h1 id=&quot;chapter1&quot;&gt;Chapter 1: It begins&lt;/h1&gt;</pre>
+              Within the page (e.g. in a table of contents) we can refer to this heading as:
+              <pre>&lt;a href=&quot;#chapter1&quot;&gt;Jump to Chapter 1&lt;/a&gt;.</pre>
+              From another page (in same site) we refer to this as:
+              <pre>&lt;a href=&quot;books/book1.html#chapter1&quot;&gt;Go to Chapter 1 of Book 1&lt;/a>.</pre>
+              Across the internet link is:
+              <pre>&lt;a href=&quot;http://www.books.com/books/book1.html#chapter1&quot;&gt;
+  Go to Chapter 1 of Book 1 at books.com
+&lt;/a&gt;.</pre>
+</p>
+<p>There are some examples of these forms of <em>intra-page</em> links in the <a href="sitemap.html">Sitemap</a>. 
           </div>
         </div><!-- the unwrapped div.yui-b takes a fixed width and alignment based on the class of the top-level containing node -->
         <div class="yui-b group">
