@@ -347,5 +347,148 @@ The HTML Markup for this is:
 
 See also: [[http://eg-146.cpjobling.org.uk/imglinks.html|imglinks.html]].
 ===== HTML and XHTML =====
+
+  * HTML 4 is mark-up for forgiving browsers.
+  * XHTML is mark-up that insists that standards are used!
+  * HTML 4 and XHTML use precisely the same elements, attributes and values. 
+  * They differ in syntax.
+
+===== HTML is rather relaxed =====
+
+But XHTML: 
+  * requires that ''html'', ''head'', ''body'' and ''DOCTYPE'' be present.
+  * insists that all tags (even empty ones) have to be closed.
+  * requires that all attribute values are enclosed in quotes.
+  * demands that all elements, attributes and predefined values be in lower case.
+  * requires that all values, even those that have same name as the attribute be present.
+
+===== Benefits of XHTML's Pedantry =====
+
+Keeps code consistent, well structured and free of non-standard tags.
+
+Easier to:
+  * update and edit
+  * format with CSS
+  * generate from or convert to a database
+  * adapt to other systems, such as hand-held devices or assistive technologies
+
+===== More benefits (XML) =====
+
+Logical step on transition from HTML to XML (see later)
+  * Is a new standard so will be supported well into the future.
+  * Tags for older browsers are deprecated and will eventually not be supported.
+
+-----
+Since these notes were written the community has somewhat rejected XML in the favour of HTML5, an evolution of HTML4.
+
+===== More benefits: browser support and accessibility ======
+
+  * More likely to be properly and consistently supported by modern browsers on all platforms.
+  * Eases support for statutory accessibility guidelines.
+
+
+===== Versions and Flavours of (X)HTML =====
+
+Three current flavours of both HTML 4 and XHTML 1.0
+  * //transitional//, //frames//, and //strict//.
+
+Use XHTML if you want to use standards, <del>HTML if you don’t care about standards.</del>
+
+<del>Use //transitional// if you want to use deprecated tags.</del>
+
+<del>Use //frames// if you need //framesets//.</del>
+
+===== Strict Flavours of (X)HTML =====
+
+//Strict// HTML/XHTML does not allow either //framesets// or //deprecated// tags.
+
+Latest version of XHTML recommendation is XHTML 1.1 //strict// only!
+
+Version 2.0 of XHTML is in //draft recommendation stage//. Little browser support as yet.
+
+There is also an HTML version 5 which aims to better reflect actual usage of HTML in web applications etc.
+  * This is likely to be the new standard!
+
+===== DOCTYPE Declaration =====
+
+  * You specify which version and flavour of (X)HTML you are using with a DOCTYPE declaration.
+  * If your (modern) browser doesn’t find a DOCTYPE declaration it uses //Quirks// mode.
+  * If it does, it can be //stricter// about how it interprets your HTML code.
+
+DOCTYPE for XHTML 1.1:
+
+<code html>
+<!DOCTYPE html
+          PUBLIC " -//W3C//DTD XHTML 1.1//EN"
+          "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd" >
+</code>
+
+
 ===== Style sheets =====
+
+Every web browser uses a default scheme to display each HTML tag.
+  * E.g. text in an ''h1'' element is often larger than and ''h2'' tag. Both are usually shown bold face.
+
+To give more control you should add style using style sheets.
+
+Styles are defined by the Cascading Style Sheet (CSS) standard. 
+
+===== The "cascade" in Cascading Style Sheets =====
+
+Styles are said to //cascade// because:
+  * styles defined in an external style sheet, will be overridden by styles defined in the head of a document
+  * which in turn will be overridden by styles defined locally in an element
+  * and finally all styles can be overridden by local browser settings.
+===== An Example Style Rule =====
+
+<code css>
+p {
+      font-family: "Trebuchet MS", "Helvetica", sans-serif;
+      font-weight: bold;    
+      color: #2266cc;  
+}
+</code>
+
+----
+
+  - The //selector//: determines which elements the rule is applied to (here ''<p>'')
+  - Curly brackets (braces): open and close the declarations and contains style rule declarations
+  - This rule has three declarations:
+    * Each declaration has a **property name** followed by a //colon//, //one or more// **values** (separated by //commas//) and a //final semicolon//.
+    * Here we define the the font-family (whichever is the first that the browser supports), font weight (bold), and the (foreground) colour of the text in a paragraph.
+
 ===== Designing Your Site =====
+
+  * What do you want to convey?
+  * Consider your audience
+  * What will appeal to them?
+  * Lots of graphics or quick downloads?
+  * How many pages will you need?
+  * What sort of structure will you have?
+  * Do you want your visitors to follow a set direction?
+  * Do you want them always to be able to go in any direction?
+  * Sketch out your site on paper.
+  * Devise a simple, consistent naming system for your pages, images and external files.
+
+===== Summary =====
+
+  * [[#books_head_first|Books]]
+  * [[#mark-up|Mark-up]]
+  * [[#textual_content|Textual Content]]
+  * [[#links_images_and_other_non-textual_content|Links, Images and other Non-Textual Content]]
+  * [[#html_and_xhtml|HTML and XHTML]]
+  * [[#style_sheets|Style sheets]]
+  * [[#designing_your_site|Designing Your Site]]
+
+===== Coming Next =====
+
+  * An Introduction to Web Content
+  * Web Page Building Blocks and Web Site Design
+  * **Basic (X)HTML, images and links**
+  * Cascading Style Sheets
+  * CSS Layout
+  * More XHTML: Lists, Tables and Frames 
+  * Dynamic Effects with CSS and JavaScript
+  * Applets, Plug-ins and Multimedia
+  * XML and XSLT
+  * Forms and CGI
