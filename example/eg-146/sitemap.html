@@ -32,9 +32,131 @@
         <!-- The wide column is wrapped in div#yui-main -->
         <div id="yui-main">
           <div class="yui-b group">
-            <h3 id="files">File System</h3>
-            <p>Follow <a href="dir.txt">this link</a> to see the actual file-listing for this website as determined by the Unix <code>ls -LR</code> command. You should use this listing to understand how the <em>file path</em> part of the web site's URLs are mapped to files.
+            <h2 id="files">File System</h2>
+            <p>Follow <a href="dir.txt">this link</a> to see the actual file-listing for this website as determined by the Unix <code>ls -lR</code> command. You should use this listing to understand how the <em>file path</em> part of the web site's URLs are mapped to files.
             </p>
+            <h2 id="absolute">Absolute Paths</h2>
+            <p>These are the files linked using <em>absolute paths</em> linked to the document root <code>/</code>. I have used the following notation to define the type of resource:
+              <ul>
+                <li>[d] is a directory (or folder)</li>
+                <li>[w] is a web page (.html)
+                <li>[t] is a plain text file (.txt)
+                <li>[g] is a graphic file (.png, .gif or .jpeg)
+                <li>[s] is a CSS style file (.css)
+               </ul>
+               The relative indentation indicates the directory structure used on the website. Hover
+               over the link and observe the URL displayed in your browser's status bar to understand
+               how resources map to URLs.
+             </p>
+             <ul>
+               <li>[d] <em>Document Root</em>: <a href="/">/</a>
+                 <ul>
+                   <li>[h] Home page: <a href="/index.html">/index.html</a> (also <a href="/">/</a>)</li>
+                   <li>[t] File listing: <a href="/dir.txt">/dir.txt</a></li>
+                   <li>[h] Homework: <a href="/homework.html">/homework.html</a></li>
+                   <li>[h] Image links: <a href="/imglinks.html">/imglinks.html</a></li>
+                   <li>[h] Index.html pages: <a href="/index-html.html">/index-html.html</a></li>
+                   <li>[h] Page links: <a href="/pagelinks.html">/pagelinks.html</a></li>
+                   <li>[h] Site map (this file): <a href="/sitemap.html">/sitemap.html</a></li>
+                   <li>[h] Web page template: <a href="/template.html">/template.html</a></li>
+                   <li>[h] You are here! <a href="/youarehere.html">/youarehere.html</a></li>
+                   <li>[d] about: <a href="/about">/about</a>
+                      <ul>
+                        <li>[h] About us: <a href="/about/index.html">/about/index.html</a> (also <a href="/about/">/about/</a>)</li>
+                        <li>[d] about/staff: <a href="/about/staff">/about/staff</a>
+                          <ul>
+                            <li>[h] About us: Staff: <a href="/about/staff/index.html">/about/staff/index.html</a> (also <a href="/about/staff/">/about/staff/</a>)</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  <li>[d] projects: <a href="/projects">/projects</a>
+                    <ul>
+                      <li>[h] Project A: <a href="/projects/projecta.html">/projects/projecta.html</a></li>
+                      <li>[h] Project B: <a href="/projects/projectb.htm">/projects/projectb.html</a></li>
+                      <li>[h] Project C: <a href="/projects/projectc.html">/projects/projectc.html</a></li>
+                    </ul>
+                  </li>
+                  <li>[d] images: <a href="/images">/images</a>
+                    <ul>
+                      <li>[g] <a href="/images/cpjobling.jpg">/images/cpjobling.jpg</a></li>
+                      <li>[g] <a href="/images/logo.jpg">/images/logo.jpg</a></li>
+                      <li>[g] <a href="/images/uws-shield.png">/images/uws-shield.png</a></li>
+                      <li>[g] <a href="/images/valid-xhtml11.png">/images/valid-xhtml11.png</a></li>
+                    </ul>
+                  </li> 
+                  <li>[d] style: <a href="/style">/style</a>
+                    <ul>
+                      <li>[s] <a href="/style/base.css">/style/base.css</a></li>
+                      <li>[s] <a href="/style/fonts.css">/style/fonts.css</a></li>
+                      <li>[s] <a href="/style/grid.css">/style/grid.css</a></li>
+                      <li>[s] <a href="/style/ie.css">/style/ie.css</a></li>
+                      <li>[s] <a href="/style/master.css">/style/master.css</a></li>
+                      <li>[s] <a href="/style/reset.css">/style/reset.css</a></li>
+                      <li>[s] <a href="/style/screen.css">/style/screen.css</a></li>
+                    </ul> 
+                  </li>             
+                </ul>
+              </li>
+            </ul>
+            <h2 id="relative">Relative Paths</h2>
+            <p>These are the files linked using paths <em>relative</em> to the <em>document root</em> <a href="/">/</a>. As before, hover
+               over the link and observe the URL displayed in your browser's status bar to understand
+               how resources map to URLs. Note that the browser should display <strong>exactly</strong> the same URL for a given resource whether you use <em>absolute</em> or <em>relative</em> paths for your links. The browser is computing these paths from the rules given in the lecture and described in the web pages on this web site.
+             </p>
+             <ul>
+               <li>[d] <em>Document Root</em>
+                 <ul>
+                   <li>[h] Home page: <a href="index.html">index.html</a></li>
+                   <li>[t] File listing: <a href="dir.txt">dir.txt</a></li>
+                   <li>[h] Homework: <a href="homework.html">homework.html</a></li>
+                   <li>[h] Image links: <a href="imglinks.html">imglinks.html</a></li>
+                   <li>[h] Index.html pages: <a href="index-html.html">index-html.html</a></li>
+                   <li>[h] Page links: <a href="pagelinks.html">pagelinks.html</a></li>
+                   <li>[h] Site map (this file): <a href="sitemap.html">sitemap.html</a></li>
+                   <li>[h] Web page template: <a href="template.html">template.html</a></li>
+                   <li>[h] You are here! <a href="youarehere.html">youarehere.html</a></li>
+                   <li>[d] about: <a href="about">about</a>
+                      <ul>
+                        <li>[h] About us: <a href="about/index.html">about/index.html</a> (also <a href="/about/">about/</a>)</li>
+                        <li>[d] about/staff: <a href="about/staff">about/staff</a>
+                          <ul>
+                            <li>[h] About us: Staff: <a href="about/staff/index.html">about/staff/index.html</a> (also <a href="about/staff/">about/staff/</a>)</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  <li>[d] projects: <a href="projects">projects</a>
+                    <ul>
+                      <li>[h] Project A: <a href="projects/projecta.html">projects/projecta.html</a></li>
+                      <li>[h] Project B: <a href="projects/projectb.htm">projects/projectb.html</a></li>
+                      <li>[h] Project C: <a href="projects/projectc.html">projects/projectc.html</a></li>
+                    </ul>
+                  </li>
+                  <li>[d] images: <a href="images">images</a>
+                    <ul>
+                      <li>[g] <a href="images/cpjobling.jpg">images/cpjobling.jpg</a></li>
+                      <li>[g] <a href="images/logo.jpg">images/logo.jpg</a></li>
+                      <li>[g] <a href="images/uws-shield.png">images/uws-shield.png</a></li>
+                      <li>[g] <a href="images/valid-xhtml11.png">images/valid-xhtml11.png</a></li>
+                    </ul>
+                  </li> 
+                  <li>[d] style: <a href="style">style</a>
+                    <ul>
+                      <li>[s] <a href="style/base.css">style/base.css</a></li>
+                      <li>[s] <a href="style/fonts.css">style/fonts.css</a></li>
+                      <li>[s] <a href="style/grid.css">style/grid.css</a></li>
+                      <li>[s] <a href="style/ie.css">style/ie.css</a></li>
+                      <li>[s] <a href="style/master.css">style/master.css</a></li>
+                      <li>[s] <a href="style/reset.css">style/reset.css</a></li>
+                      <li>[s] <a href="style/screen.css">style/screen.css</a></li>
+                    </ul> 
+                  </li>             
+                </ul>
+              </li>
+            </ul>
+            <h3>Links within pages</h3>
+            <h3>Images</h3>
           </div>
         </div><!-- the unwrapped div.yui-b takes a fixed width and alignment based on the class of the top-level containing node -->
         <div class="yui-b group">
