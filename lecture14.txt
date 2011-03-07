@@ -480,6 +480,13 @@ p {
   * [[#style_sheets|Style sheets]]
   * [[#designing_your_site|Designing Your Site]]
 
+===== Homework ======
+
+Explore the [[http://eg-146.cpjobling.org.uk|Demo Web Site]] and answer the questions given on the [[http://eg-146.cpjobling.org.uk/homework.html|homework]] page.
+
+====== Acquiring the Code =====
+
+If you would like a copy of the web site to serve as a basis for your own projects, it is available from GitHub in [[https://github.com/cpjobling/web-page-building-blocks|cpjobling/web-page-building-blocks]]. Follow the links to [[https://github.com/cpjobling/web-page-building-blocks/tree/master/example/eg-146|example/eg-146]] to view the source code. Choose //download// to download a copy of the site (and a version of the the presentation) as a zip file. Alternatively, join GitHub and clone the project!
 ===== Coming Next =====
 
   * An Introduction to Web Content
