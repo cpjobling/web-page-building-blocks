@@ -43,36 +43,34 @@
             <h3 id="absolute">
               Absolute paths
             </h3>
-            <p>
-              <ul>
-                <li>This is the <em>About Us</em> page. Its <em>URL path</em> is: <code>public_html/eg-146/about/index.html</code>.</li>
-                <li>Its URL is <a href="http://eg-146.cpjobling.org.uk/about/index.html">http://eg-146.cpjobling.org.uk/about/index.html</a></li>
-                <li>or more simply <a href="http://eg-146.cpjobling.org.uk/about/">http://eg-146.cpjobling.org.uk/about/</a>.</li>
-                <li>From the previous page we used the absolute path <a href="/about/index.html">/about/index.html</a> to get here.</li>
-              </ul>
-            </p>
-
+            <ul>
+              <li>This is the <em>About Us</em> page. Its <em>URL path</em> is: <code>public_html/eg-146/about/index.html</code>.</li>
+              <li>Its URL is <a href="http://eg-146.cpjobling.org.uk/about/index.html">http://eg-146.cpjobling.org.uk/about/index.html</a></li>
+              <li>or more simply <a href="http://eg-146.cpjobling.org.uk/about/">http://eg-146.cpjobling.org.uk/about/</a>.</li>
+              <li>From the previous page we used the absolute path <a href="/about/index.html">/about/index.html</a> to get here.</li>
+            </ul>
             <p>
               <a class="arrow" href="/about/staff/">Next [/about/staff/]</a> →
             </p>
             <h3 id="relative">Relative paths</h3>
             <ul>
               <li>To link to this document from <em>youarehere.html</em> you could use this HTML markup:
-                <pre>Go to the &lt;a href=&quot;about/index.html&quot;&gt;About Us&lt;/a&gt; page!.</pre>
+                <pre>Go to the &lt;a href=&quot;about/index.html&quot;&gt;About Us&lt;/a&gt; page!.</pre></li>
             </ul>
             <h3 id="parents">Linking upwards</h3>
-            <p>To link to a file in a higher level directory you use the Unix notation for the <em>parent directory</em>. For example, from this file, <code>../</code> indicates the directory above <code>../public/eg-146/about</code>, that is <code>../public/eg-146</code>. This is the <em>document root</em> <code>/</code> of this web site.
+            <p>To link to a file in a higher level directory you use the Unix notation for the <em>parent directory</em>. For example, from this file, <code>../</code> indicates the directory above <code>../public/eg-146/about</code>, that is <code>../public/eg-146</code>. This is the <em>document root</em> <code>/</code> of this web site.</p>
               <ul>
                 <li>To link to <em>youarehere.html</em> from this file you could use this HTML markup:
                  <pre>Back to &lt;a href=&quot;about/index.html&quot;&gt;You Are Here&lt;/a&gt;!.</pre>Like this: Back to <a href="../youarehere.html">You Are Here</a>!.</li>
               </ul>
               <h3 id="images">Images</h3>
-              <p>The same rules applies to images. E.g. from this file the following are equivalent:
+              <p>The same rules applies to images. E.g. from this file the following are equivalent:</p>
                 <pre>&lt;img src=&quot;../images/cpjobling.jpg&quot; alt=&quot;The author of this web site.&quot; /&gt;
 &lt;img src=&quot;/images/cpjobling.jpg&quot; alt=&quot;The author of this web site.&quot; /&gt;
 &lt;img src=&quot;http://eg-146.cpjobling.org.uk/images/cpjobling.jpg&quot; 
      alt=&quot;The author of this web site.&quot; /&gt;</pre> 
-                  They all produce:<br />
+             <p>
+                 They all produce:<br />
                   <img src="../images/cpjobling.jpg" alt="The author of this web site." />
               </p>
           </div>
