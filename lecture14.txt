@@ -1,0 +1,334 @@
+~~SLIDESHOW~~
+====== Web Page Building Blocks and Web Site Design ======
+
+
+**Lecture 14**: To be given on Tuesday 15th March, 2011.
+
+**Lecturer**: [[C.P.Jobling@Swansea.ac.uk|Dr Chris P. Jobling]].
+
+
+===== Web Page Building Blocks and Web Site Design =====
+
+  * [[#books_head_first|Books]]
+  * [[#mark-up|Mark-up]]
+  * [[#textual_content|Textual Content]]
+  * [[#links_images_and_other_non-textual_content|Links, Images and other Non-Textual Content]]
+  * [[#html_and_xhtml|HTML and XHTML]]
+  * [[#style_sheets|Style sheets]]
+  * [[#designing_your_site|Designing Your Site]]
+
+===== Books (Head First) =====
+
+<html><a href="http://oreilly.com/catalog/9780596101978" title="Head First HTML with CSS &amp; XHTML"  target="_blank"> <img src="http://covers.oreilly.com/images/9780596101978/lrg.jpg" alt="Head First HTML with CSS & XHTML (cover)" height="350" /></a></html>
+
+----
+
+Elisabeth Freeman and Eric Freeman, “[[http://oreilly.com/catalog/9780596101978|Head First HTML with CSS & XHTML]],” O’Reilly Media Inc. 2005. ISBN: 0-596-10197-X. Brilliant new addition to the Head First series (see [[http://oreilly.com/catalog/9780596009205|Head First Java]]). Many more //Head First// books on web technology, programming and applications are now available!
+
+===== Books (Castro) =====
+
+<html><a href="http://www.peachpit.com/store/product.aspx?isbn=0321430840" title="HTML for the World Wide Web" target="_blank"><img src="http://www.peachpit.com/ShowCover.aspx?isbn=0321430840" alt="HTML for the World Wide Web (Cover)" height="350" /></html>
+
+----
+
+Elizabeth Castro, “[[http://www.amazon.co.uk/HTML-XHTML-CSS-Visual-QuickStart/dp/0321430840/ref=sr_1_1?ie=UTF8&qid=1299173946&sr=8-1|HTML for the World Wide Web]]],” 6th Ed., Peachpit Press, 2007. ISBN: 0-321-13007-3. Web site: http://www.cookwood.com. I used this for most of the examples.
+
+===== Books (Niederst Robbins -- Nutshell) =====
+
+<html><a href="http://oreilly.com/catalog/9780596009878/" title="Web Design in a Nutshell" target="_blank"><img alt="Web Design in a Nutshell (Cover)" src="http://covers.oreilly.com/images/9780596009878/lrg.jpg" height="350" /></a></html>
+
+----
+
+Jennifer Niederst Robbins, “[[http://oreilly.com/catalog/9780596009878/|Web Design in a Nutshell]],” 3rd Ed., O’Reilly, February 2006. ISBN: 0-596-00987-9. Very good reference! Buy if you’re serious about Web Design.
+
+===== Books (Niederst Robbins -- Web Design)=====
+
+<html><a href="http://oreilly.com/catalog/9780596527525/" title="Learning Web Design" target="_blank"><img alt="Learning Web Design (Cover)" src="http://covers.oreilly.com/images/9780596527525/lrg.jpg" height="350" /></a></html>
+
+----
+
+Jennifer Niederst, “[[http://oreilly.com/catalog/9780596527525/|Learning Web Design - A Beginner's Guide to (X)HTML, Stylesheets and Web Graphics]],” 3rd Ed., O’Reilly Media Inc., June 2007. ISBN: 0-596-52752-7. Very nice book. I have the second edition.
+
+===== Mark-up ======
+
+HTML stands for “**H**yper**T**ext //**M**ark-up// **L**anguage”
+
+Allows information about the structure of a document to be included in the document itself.
+  * Includes formatting instructions
+  * Describes the relationships between parts of the document
+  * Is text-based so universally accessible
+
+===== HTML mark-up =====
+
+Four Types of Mark-up provided in HTML
+  * Elements
+  * Attributes
+  * Values
+  * Declarations (discussed later)
+
+===== Mark-up: Non-empty Elements =====
+
+<code html>
+  <element-name [attribute="value"]* >
+     Labels that identify the different 
+     parts of a web page.
+  </element-name>
+</code>
+----
+
+A non-empty element consists of an element opening tag: ''<tag-name>'', zero-or more attributes (name-value pairs), content which can contain other elements and a closing tag ''</tag-name>''.
+
+===== Mark-up: Empty Elements =====
+
+
+<code html>
+  <element-name [attribute=″value″]* />
+</code>
+
+----
+
+Elements can be empty. An empty element consists of a tag opening: ''<tag-name''; zero-or more attributes (name-value pairs) and a tag closing ''/>''.
+
+
+===== Mark-up: Attributes and Values =====
+
+  * Attributes contain information about the data in the document.
+  * Attributes always have a name and a value.
+  * Value is enclosed in double quotes.
+
+
+===== Mark-up: Types of Attributes =====
+
+  * Arbitrary text: ''alt="Picture of my cat Lucy."''
+  * Enumerated or predefined values: ''media="screen"'' ''media="print"''
+  * Number or percentage: ''width="300"'' (pixels) ''height="50%"''
+  * Colour: either a name or hexadecimal representation of the Red, Blue, Green content of the colour ''bgcolor="white"'', ''bgcolor="#FF55FF"''
+  * References to other files/objects in the form of a URL: ''src="http://www.swan.ac.uk/map.gif"''
+
+===== Block-vs-Inline Elements =====
+
+  * A //block-level// element will always be displayed on a new line, like a new paragraph in a book.
+  * An //inline-element// will displayed in the current line, like the next word in a paragraph.
+  * A special element, called the //list-item//, is only used in lists.
+
+----
+
+  * Block level elements can contain other block-level elements, in-line elements and text.
+  * Inline elements (usually) only contain other in-line elements and text.
+
+===== Parents and Children =====
+
+  * If one element contains another, it is considered to be the //parent// of the enclosed, or //child// element.
+  * Any elements contained in the child element are considered //descendants// of the outer, parent element.
+
+----
+
+A web page can thus be represented by a tree which:
+  * provides the foundations for the inheritance rules in style sheets
+  * can be manipulated as such by scripting languages.
+
+===== Elements must be Properly Nested =====
+
+//Correct//:
+<code html>
+<tag-a>
+  <tag-b>content</tag-b>
+</tab-a>
+</code>
+
+//Incorrect//:
+<code html>
+<tag-a>
+  <tag-b>content</tag-a>
+</tab-b>
+</code>
+
+----
+
+Make sure that you know why the second example is incorrect.
+
+===== Textual Content =====
+
+{{:eg-146:text.png?234x350|Textual content is the bulk component of most web pages}}
+
+----
+
+Textual content is the bulk component of most web pages
+
+===== Special Properties of HTML text =====
+
+  * White space is not significant. 
+  * Spaces, tabs, new lines are compressed into a single space.
+
+----
+
+This means that you can’t rely on spaces to get layout effects.
+
+
+===== HTML Text is Unicode =====
+
+You can either use character entities or character codes for foreign language characters and symbols.
+
+For example: 
+  * ''&eacute;'' or ''&#233;'' is e-acute (<html>&eacute;</html>)
+  * ''&copy;'' or ''&#169;'' is the copyright symbol <html>&copy;</html>
+
+----
+
+The default character set is UTF-8.
+
+===== & < > and " are special =====
+
+You Can't type ''&'', ''<'', ''>'', or ''"'' directly into text, you
+must use the //entities// ''&amp;'', ''&lt;'', ''&gt;'' and ''&quot;''.
+
+----
+
+This makes the presentation of example HTML code in a web page something of a challenge!
+
+===== Links, Images and other Non-Textual Content =====
+
+Links put the [[#hypertext|HyperText]] into HTML and allow a document to directly refer to (part of) another document.
+
+Examples of images and other //Multimedia// content include:
+  * GIF, JPEG, PNG images
+  * Audio
+  * Video
+  * Flash animations
+
+
+----
+
+Note that each piece of multimedia content to be displayed in the page requires a separate HTTP request and may require a plug-in or helper application to display.
+
+===== Hypertext =====
+
+Hypertext was conceived by Vennevar Bush in the 1940s, named by Ted Nelson in the 1960s and incorporated into the Web by Tim Berners-Lee in the 1980s.
+
+Hypertext is (Loosely) modelled on the human brain in which associations are made by linking neurons. “Semantic Web” links associated ideas into a world-wide web.
+
+See [[wp>Hypertext]] for more information.
+
+===== The Uniform Resource Locator (URL) =====
+
+  * Addresses any resource (web page, file, image, video, web application) on the Internet.
+  * Invented by Tim Berners-Lee (along with HTTP and HTML)
+
+===== URL: Scheme =====
+
+Usually web protocol:
+  * **http:** <nowiki>//www.swan.ac.uk/lis/index.html</nowiki>
+
+//Other schemes//:
+<code>
+  mailto:   news:
+  ftp:      gopher:
+  file:     telnet:
+</code>
+----
+
+The //scheme// specifies the **application protocol** to be used by the web browser (user agent) to access the resource. In this example, the protocol is the //web protocol// **HTTP** -- Hypertext Transfer Protocol.
+
+
+===== URL: Host =====
+
+The host part of the URL is the DNS name or IP address with an optional port number.
+  * <nowiki>http://</nowiki> <html><b>www.swan.ac.uk</b></html> <nowiki>/lis/index.html</nowiki>
+
+----
+
+If the //host// field is a DNS name then the browser will need to perform a DNS lookup to find the corresponding IP address. The port number is normally assumed to be 80 and is omitted. However, it can be specified when the web server is not running on port 80 as as in http://webcache.swan.ac.uk:3128/ which is the proxyy server for the University.
+
+===== URL: Path =====
+
+URL path: usually directory-path + file:
+
+  * ''%%http://www.swan.ac.uk%%'' **/lis/index.html**
+
+
+
+===== Path and Host in HTTP GET Request =====
+
+  GET /lis/index.html HTTP/1.1
+  Hostname: www.swan.ac.uk
+
+----
+
+  * Only path is included in HTTP request line
+  * Hostname field is included in HTTP request header
+
+===== Other Example URLs ====
+
+  - ''%%ftp://eechris@en4.swan.ac.uk%%''
+  - ''%%news:soc.culture.welsh%%''
+  - ''%%mailto:C.P.Jobling@Swansea.ac.uk%%''
+  - ''%%file:///w|/work/home.htm%%''
+  - ''%%http://voyager.swan.ac.uk/cgi-bin/Pwebrecon.cgi?DB=local&v1=1&ti=1,1&Search_Arg=Castro&Search_Code=NAME_&CNT=10&phrase_type=1&HC=3&SID=1%%''
+
+
+----
+
+**Explanation**
+
+  - FTP request
+  - News group
+  - Mail address
+  - Local file
+  - A CGI script with arguments
+
+Note the browser may not handle all of these itself. It may call on another application (e.g. mail or news reader client) to handle the URL. It is important to note that the file “protocol” accesses local files only, and doesn't use a web server or a network connection (although the operating system may use a network connection to open a file that is stored on a network file server).
+===== Linking Within a Site =====
+
+Most links that you create will be to other pages or objects on your own site. E.g.
+  * Home page to section pages
+  * Section pages to content pages
+  * Back links, etc.
+You typically do not include ''%%http://hostname%%'' for such links.
+
+===== Linking Within a Site =====
+
+The browser will assume that the resource is on the same server as the current page.
+  * It will attempt to use the path to find the resource.
+  * Paths can be "//absolute//" rooted at the //document root// of the web site or "//relative//" either to the document root or to the current web page.
+
+----
+
+Relative pathname notation can be a bit tricky (easier to understand if you are familiar with UNIX filename notation)
+
+It is important to note that the browser constructs the path from the rules that follow. When a link is followed, or an object is downloaded into the current web page, the full resource path is always sent in the HTTP request!
+
+
+
+===== Understanding Paths: An Example Website =====
+
+Visit the demo website http://eg-146.cpjobling.org.uk to learn more about paths and how they relate to the physical files served by a web site.
+
+===== Linking within a Page =====
+
+  * You can also link to any element within a page that has an ''id'' attribute set.
+  * For example, say a web page contains
+<code html>
+<h1 id="chapter1">Chapter 1: It begins</h1>
+</code>
+  * Within the page (e.g. in a table of contents) we can refer to this heading as:
+<code html>
+<a href="#chapter1">Jump to Chapter 1</a>.
+</code>
+===== Linking to part of a page across sites =====
+  * From another page (in same site) we refer to this as:
+<code html>
+<a href="books/book1.html#chapter1">Go to Chapter 1 of Book 1</a>.
+</code>
+  * Across the Internet the link would be:
+<code html>
+<a href="http://www.books.com/books/book1.html#chapter1">
+  Go to Chapter 1 of Book 1 at books.com
+</a>.
+</code>
+
+----
+
+See also [[http://eg-146.cpjobling.org.uk/pagelinks.html|pagelinks.html]].
+===== HTML and XHTML =====
+===== Style sheets =====
+===== Designing Your Site =====
