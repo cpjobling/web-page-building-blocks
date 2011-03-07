@@ -329,6 +329,23 @@ Visit the demo website http://eg-146.cpjobling.org.uk to learn more about paths 
 ----
 
 See also [[http://eg-146.cpjobling.org.uk/pagelinks.html|pagelinks.html]].
+===== Linking Images to Web Pages =====
+
+Often we want an image to act as a link to another website.
+For example:
+
+[[http://www.swan.ac.uk|{{:eg-146:uws-shield.png?100x119|Jump to Swansea University pages.}}]]
+
+The HTML Markup for this is:
+<code html>
+  <a href="http://www.swan.ac.uk/">
+    <img src="uws-shield.jpg" alt="Jump to UWS." width="100 height="119" />
+  </a>
+</code>
+
+----
+
+See also: [[http://eg-146.cpjobling.org.uk/imglinks.html|imglinks.html]].
 ===== HTML and XHTML =====
 ===== Style sheets =====
 ===== Designing Your Site =====
