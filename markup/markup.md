@@ -142,3 +142,57 @@
 * provides the foundations for the inheritance rules in style sheets
 * can be manipulated as such by scripting languages.
 
+!SLIDE
+# Elements must be Properly Nested #
+
+## Correct ##
+
+    @@@ HTML
+    <tag-a>
+      <tag-b>content</tag-b>
+    </tab-a>
+
+!SLIDE .notes Make sure that you know why the second example is incorrect.
+# Elements must be Properly Nested #
+
+## Incorrect ##
+
+    @@@ HTML
+    <tag-a>
+        <tag-b>content</tag-a>
+    </tab-b>
+
+!SLIDE center .notes Textual content is the bulk component of most web pages
+# Textual Content #
+
+<img alt="Textual content is the bulk component of most web pages" src="http://www.cpjobling.me/dokuwiki/_media/eg-146:text.png" />
+
+!SLIDE bullets .notes This means that you can’t rely on spaces to get layout effects.
+# Special Properties of HTML text #
+
+* White space is not significant. 
+* Spaces, tabs, new lines are compressed into a single space.
+
+!SLIDE bullets
+# HTML Text is Unicode #
+
+* You can either use character entities or character codes for foreign language characters and symbols:
+* ``&eacute;`` or ``&#233;`` is e-acute (&eacute;)
+* ``&copy;`` or ``&#169;`` is the copyright symbol &copy;
+
+HTML Text is Unicode
+
+    * You can either use character entities or character codes for foreign language characters and symbols:
+    * &eacute; or &#233; is e-acute ()
+    * copy; or
+
+The default character set is UTF-8.
+
+# & < > and " are special #
+
+You Can't type ''&'', ''<'', ''>'', or ''"'' directly into text, you
+must use the //entities// ''&amp;'', ''&lt;'', ''&gt;'' and ''&quot;''.
+
+----
+
+This makes the presentation of example HTML code in a web page something of a challenge!
