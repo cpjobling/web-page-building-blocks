@@ -1,16 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
   <head>
     <title>
-      EG-146 example website: emplate file
+      EG-146 example website: Home Page
     </title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <!--[if gte IE7]><!-->
-     <link rel="stylesheet" type="text/css" media="screen,projection" href="style/screen.css" />
-    <!-- <![ENDIF]-->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" /><!--[if gte IE7]><!-->
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="style/screen.css" /><!-- <![ENDIF]-->
   </head>
   <body>
     <div id="doc" class="yui-t1">
@@ -35,11 +32,21 @@
             <p>
               Welcome to this example web site <strong>eg-146.cpjobling.org.uk</strong>.
             </p>
+            <p>
+              I built this web site to serve as an example of how to use inter-site links and images. Please explore the pages and, in particular, pay attention to how the links have actually been constructed. View the source to see how the URLs have been encoded in the anchors (element <em>&lt;a&gt;</em> with <em>href</em> attribute) and images (element <em>&lt;img&gt;</em> with<em>src</em> attribute). Observe the URL that is posted in your browser's navigation bar when you visit a page, or is displayed in the status bar when you hover over a link. Note that it is the browser that is constructing the full URL by adding the <em>absolute</em> and <em>relative</em> paths to the <em>base URL</em> of the current page. It does this by using path navigation rules that are based on rules used to navigate the Unix file system.
+            </p>
+            <p>
+              You can also learn something about simple CSS styling, basic CSS positioning and the application of external style sheets by studying the code on this site. Come back to it when we've studied those topics in class.
+            </p>
             <ul>
-              <li>This is the EG-146 demo website's home page.</li>
-              <li>Its <em>filesystem (Unix) path</em> is: <code>../public_html/eg-146/index.html</code> which maps onto the web as <code>/index.html</code>.</li>
-              <li>Its URL is <a href="http://eg-146.cpjobling.org.uk/index.html">http://eg-146.cpjobling.org.uk/index.html</a></li>
-              <li>or more simply <a href="http://eg-146.cpjobling.org.uk/">http://eg-146.cpjobling.org.uk/</a>.</li>
+              <li>This is the EG-146 demo website's home page.
+              </li>
+              <li>Its <em>filesystem (Unix) path</em> is: <code>../public_html/eg-146/index.html</code> which maps onto the web as <code>/index.html</code>.
+              </li>
+              <li>Its URL is <a href="http://eg-146.cpjobling.org.uk/index.html">http://eg-146.cpjobling.org.uk/index.html</a>
+              </li>
+              <li>or more simply <a href="http://eg-146.cpjobling.org.uk/">http://eg-146.cpjobling.org.uk/</a>.
+              </li>
             </ul>
             <p>
               The <em>URL path</em> contains files and directories (folders). On the physical file system, directories hold files and other directories.
@@ -49,7 +56,6 @@
             </p>
             <p>
               <a class="arrow" href="http://eg-146.cpjobling.org.uk/youarehere.html">Next [http://eg-146.cpjobling.org.uk/youarehere.html]</a> →
-
             </p>
             <h3 id="relative">
               Relative Paths

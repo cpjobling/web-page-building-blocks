@@ -173,26 +173,15 @@
 * White space is not significant. 
 * Spaces, tabs, new lines are compressed into a single space.
 
-!SLIDE bullets
+!SLIDE bullets .notes The default character set is UTF-8.
 # HTML Text is Unicode #
 
 * You can either use character entities or character codes for foreign language characters and symbols:
 * ``&eacute;`` or ``&#233;`` is e-acute (&eacute;)
 * ``&copy;`` or ``&#169;`` is the copyright symbol &copy;
 
-HTML Text is Unicode
 
-    * You can either use character entities or character codes for foreign language characters and symbols:
-    * &eacute; or &#233; is e-acute ()
-    * copy; or
-
-The default character set is UTF-8.
-
+!SLIDE bullets .notes This makes the presentation of example HTML code in a web page something of a challenge!
 # & < > and " are special #
 
-You Can't type ''&'', ''<'', ''>'', or ''"'' directly into text, you
-must use the //entities// ''&amp;'', ''&lt;'', ''&gt;'' and ''&quot;''.
-
-----
-
-This makes the presentation of example HTML code in a web page something of a challenge!
+* You can't type ``&``, ``<``, ``>``, or ``"`` directly into text, you must use the *entities* ``&amp;``, ``&lt;``, ``&gt;`` and ``&quot;``.
